@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapcsolat – Kutya-Kozmetika.hu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('tappancs-csont-tapeta.png');
+  background-repeat: repeat;
+  background-size: 300px;
+  background-color: #fdfbf7;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-image: url('tappancs-csont-tapeta.png');
+  background-repeat: repeat;
+  background-size: 300px;
+  background-color: #fdfbf7;
+  color: #cc6600;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 150px;
+}
+    header h1 { font-size: 32px; margin-bottom: 10px; }
+    header p { font-size: 16px; margin: 0; }
+    nav { background-color: #000; text-align: center; padding: 15px 0; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
+    nav a:hover { color: #ffe6cc; }
+    nav a.active {
+    border-bottom: 3px solid #ffcc99;
+    padding-bottom: 5px;
+  }
+    .content { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+    .content h2 { font-size: 28px; margin-bottom: 20px; color: #cc6600; text-align: center; }
+    .info p {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer { background-color: #4e8ff0; color: #fff; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px; }
+    @media (max-width: 600px) {
+      nav a { display: block; margin: 10px 0; }
+      .content h2 { font-size: 22px; }
+    }
+    body {
+  animation: fadeIn 3.0s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+html {
+  overflow-y: scroll;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons svg {
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  transform: scale(1.15);
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Kutya-Kozmetika.hu</h1>
+    <p>Lépj velünk kapcsolatba bátran!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Főoldal</a>
+    <a href="szolgaltatasok.html">Szolgáltatások</a>
+    <a href="idopontfoglalas.html">Időpontfoglalás</a>
+    <a href="kapcsolat.html" class="active">Kapcsolat</a>
+  </nav>
+
+  <div class="content">
+    <h2>Elérhetőségeink</h2>
+    <div class="info">
+      <p><strong>Cím:</strong> 1111 Budapest, Kutyautca 10.</p>
+      <p><strong>Telefon:</strong> +36 30 123 4567</p>
+      <p><strong>E-mail:</strong> info@kutya-kozmetika.hu</p>
+      <p><strong>Nyitvatartás:</strong> H–P 9:00–18:00, Sz 10:00–14:00</p>
+    </div>
+
+    <!-- Google Maps beágyazás -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10779.49822801277!2d19.0488505!3d47.4813896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc4a6fa0b97b%3A0x2b6442fd2c4d9c85!2sK%C3%B6rnyezet%20utcai%20kutyakozmetika!5e0!3m2!1shu!2shu!4v1580744474609!5m2!1shu!2shu" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/aTeOldalad" target="_blank" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#1877f2" viewBox="0 0 24 24">
+        <path d="M22.675 0h-21.35C.597 0 0 .6 0 1.337v21.326C0 23.4.597 24 1.325 24h11.494V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.62h-3.12V24h6.116C23.403 24 24 23.4 24 22.663V1.337C24 .6 23.403 0 22.675 0z"/>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/aTeOldalad" target="_blank" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#E4405F" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.6.01 4.9.07 1.17.05 1.95.24 2.41.4a4.9 4.9 0 011.74 1.14 4.9 4.9 0 011.14 1.74c.16.46.35 1.24.4 2.41.06 1.29.07 1.7.07 4.9s-.01 3.6-.07 4.9c-.05 1.17-.24 1.95-.4 2.41a4.9 4.9 0 01-1.14 1.74 4.9 4.9 0 01-1.74 1.14c-.46.16-1.24.35-2.41.4-1.29.06-1.7.07-4.9.07s-3.6-.01-4.9-.07c-1.17-.05-1.95-.24-2.41-.4a4.9 4.9 0 01-1.74-1.14 4.9 4.9 0 01-1.14-1.74c-.16-.46-.35-1.24-.4-2.41C2.21 15.6 2.2 15.2 2.2 12s.01-3.6.07-4.9c.05-1.17.24-1.95.4-2.41a4.9 4.9 0 011.14-1.74 4.9 4.9 0 011.74-1.14c.46-.16 1.24-.35 2.41-.4C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.16 0-3.53.01-4.77.07-1.02.05-1.57.22-1.94.36a3.1 3.1 0 00-1.14.74 3.1 3.1 0 00-.74 1.14c-.14.37-.31.92-.36 1.94-.06 1.24-.07 1.61-.07 4.77s.01 3.53.07 4.77c.05 1.02.22 1.57.36 1.94.17.47.4.84.74 1.14.3.3.67.57 1.14.74.37.14.92.31 1.94.36 1.24.06 1.61.07 4.77.07s3.53-.01 4.77-.07c1.02-.05 1.57-.22 1.94-.36.47-.17.84-.4 1.14-.74.3-.3.57-.67.74-1.14.14-.37.31-.92.36-1.94.06-1.24.07-1.61.07-4.77s-.01-3.53-.07-4.77c-.05-1.02-.22-1.57-.36-1.94a3.1 3.1 0 00-.74-1.14 3.1 3.1 0 00-1.14-.74c-.37-.14-.92-.31-1.94-.36-1.24-.06-1.61-.07-4.77-.07zM12 5.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4zm0 10.2a4 4 0 100-8 4 4 0 000 8zm5.8-10.65a1.45 1.45 0 110 2.9 1.45 1.45 0 010-2.9z"/>
+      </svg>
+    </a>
+    <a href="https://www.tiktok.com/@aTeOldalad" target="_blank" aria-label="TikTok">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#000000" viewBox="0 0 24 24">
+        <path d="M12.9 2h2.4c.2 1.5 1.3 2.7 2.7 3.2v2.4c-1.1-.1-2.2-.5-3.2-1.1v7.2c0 3-2.4 5.4-5.4 5.4S4 16.7 4 13.7s2.4-5.4 5.4-5.4c.3 0 .7 0 1 .1v2.4c-.3-.1-.6-.1-1-.1-1.7 0-3 1.4-3 3s1.3 3 3 3 3-1.3 3-3V2z"/>
+      </svg>
+    </a>
+    <a href="https://m.me/aTeOldalad" target="_blank" aria-label="Messenger">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#0084FF" viewBox="0 0 24 24">
+        <path d="M12 0C5.372 0 0 4.989 0 11.145c0 3.513 1.707 6.637 4.38 8.694v4.161l4.016-2.2a13.6 13.6 0 003.604.482c6.627 0 12-4.989 12-11.137S18.627 0 12 0zm.833 13.504l-2.395-2.568-4.747 2.568 5.15-5.419 2.293 2.535 4.679-2.535-4.98 5.419z"/>
+      </svg>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 Kutya-Kozmetika.hu – Minden jog fenntartva.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kutya-Kozmetika.hu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('tappancs-csont-tapeta.png');
+  background-repeat: repeat;
+  background-size: 300px;
+  background-color: #fdfbf7;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-image: url('tappancs-csont-tapeta.png');
+  background-repeat: repeat;
+  background-size: 300px;
+  background-color: #fdfbf7;
+  color: #cc6600;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 150px;
+}
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    nav {
+  background-color: #000; /* fekete háttér */
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: #fff; /* fehér betűk */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc99; /* halvány narancs kiemelés */
+}
+nav a.active {
+  border-bottom: 3px solid #ffcc99;
+  padding-bottom: 5px;
+}
+
+
+
+    .content {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      <div class="hero-text">
+  <h2>Üdvözlünk a Kutya-Kozmetikában!</h2>
+  <p id="slogan">Fürdetés. Nyírás. Kényeztetés.</p>
+</div>
+    }
+    
+
+    .content h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #cc6600;
+    }
+
+    .content p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .content img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #4e8ff0;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      .content h2 {
+        font-size: 22px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+    body {
+  animation: fadeIn 3.0s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+html {
+  overflow-y: scroll;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Kutya-Kozmetika.hu</h1>
+    <p>Szeretettel várjuk kedvencedet Budapesten!</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Főoldal</a>
+    <a href="szolgaltatasok.html">Szolgáltatások</a>
+    <a href="idopontfoglalas.html">Időpontfoglalás</a>
+    <a href="kapcsolat.html">Kapcsolat</a>
+  </nav>
+
+  <div class="content">
+    <h2>Átváltozások előtte és utána</h2>
+    <p>Valódi eredmények profi kutyakozmetikánkban – nézd meg a különbséget!</p>
+  
+    <img id="slider" src="elötte-utána1.png" alt="Kutyakozmetika előtte-utána" style="
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      margin: 30px auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: opacity 1s ease-in-out;
+    ">
+  </div>
+  
+  <script>
+    const images = ["elötte-utána1.png", "elötte-utána2.png"];
+    let index = 0;
+    const slider = document.getElementById("slider");
+  
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      slider.style.opacity = 0;
+      setTimeout(() => {
+        slider.src = images[index];
+        slider.style.opacity = 1;
+      }, 500);
+    }, 3000);
+  </script>
+
+  <footer>
+    &copy; 2025 Kutya-Kozmetika.hu – Minden jog fenntartva.
+  </footer>
+
+</body>
+</html>

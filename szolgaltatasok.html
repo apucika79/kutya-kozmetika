@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szolgáltatások – Kutya-Kozmetika.hu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('tappancs-csont-tapeta.png');
+  background-repeat: repeat;
+  background-size: 300px;
+  background-color: #fdfbf7;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-image: url('tappancs-csont-tapeta.png');
+  background-repeat: repeat;
+  background-size: 300px;
+  background-color: #fdfbf7;
+  color: #cc6600;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 150px;
+}
+    header h1 { font-size: 32px; margin-bottom: 10px;}
+    header p { font-size: 16px; margin: 0; }
+    nav { background-color: #000; text-align: center; padding: 15px 0; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
+    nav a:hover { color: #ffe6cc; }
+    nav a.active {
+    border-bottom: 3px solid #ffcc99;
+    padding-bottom: 5px;
+  }
+    .content { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+    .content h2 { font-size: 28px; margin-bottom: 20px; color: #cc6600; text-align: center; }
+    .content ul { list-style-type: none; padding-left: 0; }
+    .content li { padding: 10px 0; border-bottom: 1px solid #ddd; font-size: 18px; }
+    footer { background-color: #4e8ff0; color: #fff; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px; }
+    @media (max-width: 600px) {
+      nav a { display: block; margin: 10px 0; }
+      .content h2 { font-size: 22px; }
+    }
+    body {
+  animation: fadeIn 3.0s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #cc6600;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 0;
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  flex-grow: 1;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+html {
+  overflow-y: scroll;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  flex-grow: 1;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .card {
+    font-size: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Kutya-Kozmetika.hu</h1>
+    <p>Professzionális szolgáltatások kedvencednek</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Főoldal</a>
+    <a href="szolgaltatasok.html" class="active">Szolgáltatások</a>
+    <a href="idopontfoglalas.html">Időpontfoglalás</a>
+    <a href="kapcsolat.html">Kapcsolat</a>
+  </nav>
+
+  <div class="service-grid">
+    <div class="card" title="Ár: 3200 Ft-tól">
+      <img src="furdetes.jpg" alt="Fürdetés kutyával">
+      <p>Fürdetés természetes samponnal</p>
+    </div>
+    <div class="card" title="Ár: 5500 Ft-tól">
+      <img src="nyiras.jpg" alt="Szakszerű nyírás">
+      <p>Szakszerű nyírás, fajtának megfelelően</p>
+    </div>
+    <div class="card" title="Ár: 2000 Ft-tól">
+      <img src="karomvagas-fultisztitas.jpg" alt="Karomvágás és fültisztítás">
+      <p>Karomvágás, fültisztítás</p>
+    </div>
+    <div class="card" title="Ár: 4300 Ft-tól">
+      <img src="buzmirigy-tisztitas.jpg" alt="Bűzmirigy tisztítás">
+      <p>Bűzmirigy tisztítás</p>
+    </div>
+    <div class="card" title="Ár: 2500 Ft-tól">
+      <img src="bolha-kullancs.jpg" alt="Bolhairtás és kullancs eltávolítás">
+      <p>Bolhairtás, kullancs eltávolítás</p>
+    </div>
+    <div class="card" title="Ár: ingyenes Ft-tól">
+      <img src="kolyokkutya-szoktatas.jpg" alt="Kölyökkutya szoktatás">
+      <p>Kölyökkutya szoktatás első látogatáskor</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Kutya-Kozmetika.hu – Minden jog fenntartva.
+  </footer>
+
+</body>
+</html>
